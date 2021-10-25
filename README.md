@@ -12,8 +12,6 @@ Cathook Is Under The MIT Licences, And We Understand we are most likely breaking
 Version Branches Can Change Due to Cathooks rapidlly updating and messing with the menu. so feel free to report us something thats gone afaired, and we'll fix it.
 
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+~this~
+
 
