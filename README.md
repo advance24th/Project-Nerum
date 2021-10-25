@@ -7,6 +7,13 @@ Nerum is a restyled version of cathook, so you can basically call it __fancy cat
 Cathook is a linux required cheat, that cannot at all work on windows. [View Cathook](https://github.com/nullworks/cathook)
 <br>
 
-Cathook Is Under The MIT Licences, And We Understand we are most likely breaking a few terms there, but we are physically doing this as a design makeover. <br>
-no **names, watermarks, or // cooding** will be messed with.
+Cathook Is Under The MIT Licences, And We Understand we are most likely breaking a few terms there, but we are physically doing this as a design makeover,. no **names, watermarks, or // cooding** will be messed with.
+
+Version Branches Can Change Due to Cathooks rapidlly updating and messing with the menu. so feel free to report us something thats gone afaired, and we'll fix it.
+
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
