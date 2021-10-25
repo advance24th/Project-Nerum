@@ -12,6 +12,7 @@ Cathook Is Under The MIT Licences, And We Understand we are most likely breaking
 Version Branches Can Change Due to Cathooks rapidlly updating and messing with the menu. so feel free to report us something thats gone afaired, and we'll fix it.
 
 
-~this~
-
-
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
