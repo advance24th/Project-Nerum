@@ -42,7 +42,106 @@
                     <td>Total Score</td>
                     <td>Score</td>
                     <td>Shots</td>
+                    <td>Hit %</td><html>
+    <head>
+      <script>
+        // function
+        var sPositions = localStorage.positions || "{}",
+            positions = JSON.parse(sPositions);
+        $.each(positions, function (id, pos) {
+            $("#" + id).css(pos)
+        })
+        $("#draggable").draggable({
+            containment: "#containment-wrapper",
+            scroll: false,
+            stop: function (event, ui) {
+                positions[this.id] = ui.position
+                localStorage.positions = JSON.stringify(positions)
+            }
+        });
+      </script>
+      
+        <title>Nerum Control Panel</title>
+        <div class="vgui-outset" style="float: right; padding: 6px;">
+          <div id="status" class="nohighlight" style="float: right; position: abssolute;">
+                    <a style="color: #f5a73b;">Status: </a><a style="color: #545454;" id="status-text">initializing</a>
+          </div>
+        </div>
+        <link rel="stylesheet" href="style.css">
+        <script src="bundle.js"></script>
+    </head>
+    <body class="vgui-container vgui-font">
+        <h1 style="color: #f5a73b;">Nerum Control Panel</h1>
+        <div id="container-login" class="vgui-outset">
+          <br>
+            If you don't see any data, please login using the password shown in console and refresh the page
+            <input id="api-password" type="text" placeholder="Password">
+            <input id="api-login-button" type="button" value="Login">
+            <br>
+            <br>
+            <div id="console-container" align="right">
+              <span> Sends a command to every working bot in the server in game or not  <input type="text" id="console" placeholder="command for every client" size=24 class="vgui-border-inset"></span>
+              <input type="button" id="console-send" value="Submit" class="vgui-border-out">
+        </div>
+          <br>
+      </div>
+      <br>
+      <br>
+        <div>
+            <input type="button" id="bot-restartall" value="Restart all"> <input type="button" id="bot-terminateall" value="Terminate all"> <input type="button" id="bot-refresh" value="Refresh bot list"> <input id="bot-quota" value="3"> <input id="bot-quota-apply" type="button" value="Apply quota">
+        </div>
+        <br>
+      <div id="containment-wrapper">
+        <div id="draggable">
+        <div id="table-container">
+            <table id="clients" class="vgui-table vgui-inset">
+                <tr>
+                    <td>Actions</td>
+                    <td>Restarts</td>
+                    <td>Bot Name</td>
+                    <td>State</td>
+                    <td>Steam</td>
+                    <td>Uptime</td>
+                    <td>PID</td>
+                    <td>ID</td>
+                    <td>IPC Status</td>
+                    <td>Name</td>
+                    <td>Queue</td>
+                    <td>Total Score</td>
+                    <td>Score</td>
+                    <td>Shots</td>
                     <td>Hit %</td>
+                    <td>Head %</td>
+                    <td>Connected</td>
+                    <td>Alive?</td>
+                    <td>Team</td>
+                    <td>Class</td>
+                    <td>Health</td>
+                    <td>Server IP</td>
+                    <td>Current map</td>
+                    <td>Players</td>
+                    <td>Bots</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+      </div>
+        <div>          
+          <br> <br>
+            <div class="nopad vmiddle">
+                <input type="checkbox" id="autorestart-bots">Restart Non-Responsive Bots</input>
+          <br>
+          <input type="checkbox">Save Bot Ids</input>
+            </div>
+        </div>
+        <div id="footer">
+        <br>
+            <span class="nohighlight">
+              <strong style="color: #f5a73b;">Nerum Project&copy;</strong> 2019-2021
+            </span>
+        </div>
+    </body>
+</html>
                     <td>Head %</td>
                     <td>Connected</td>
                     <td>Alive?</td>
