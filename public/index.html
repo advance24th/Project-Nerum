@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>CHIPC control panel</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="vgui.css">
+        <script src="bundle.js"></script>
+    </head>
+    <body class="vgui-container vgui-font">
+        <h1>Cathook IPC Control Panel</h1>
+        <div id="container-login" class="vgui-outset">
+            If you don't see any data, please login using the password shown in console and refresh the page
+            <input id="api-password" type="text" placeholder="Password">
+            <input id="api-login-button" type="button" value="Login">
+        </div>
+        <br>
+        <div id="console-container">
+            <span><input type="text" id="console" placeholder="command for every client" size=64 class="vgui-border-inset"></span>
+            <input type="button" id="console-send" value="Submit" class="vgui-border-out">
+        </div>
+        <br>
+        <div id="status" class="nohighlight">
+            <span>Status: </span><span id="status-text">initializing</span>
+        </div>
+        <div>
+            <input type="button" id="bot-restartall" value="Restart all"> <input type="button" id="bot-terminateall" value="Terminate all"> <input type="button" id="bot-refresh" value="Refresh bot list"> <input id="bot-quota" value="3"> <input id="bot-quota-apply" type="button" value="Apply quota">
+        </div>
+        <br>
+        <div id="table-container">
+            <table id="clients" class="vgui-table vgui-inset">
+                <tr>
+                    <td>Actions</td>
+                    <td>Restarts</td>
+                    <td>Bot Name</td>
+                    <td>State</td>
+                    <td>Steam</td>
+                    <td>Uptime</td>
+                    <td>PID</td>
+                    <td>ID</td>
+                    <td>IPC Status</td>
+                    <td>Name</td>
+                    <td>Queue</td>
+                    <td>Total Score</td>
+                    <td>Score</td>
+                    <td>Shots</td>
+                    <td>Hit %</td>
+                    <td>Head %</td>
+                    <td>Connected</td>
+                    <td>Alive?</td>
+                    <td>Team</td>
+                    <td>Class</td>
+                    <td>Health</td>
+                    <td>Server IP</td>
+                    <td>Current map</td>
+                    <td>Players</td>
+                    <td>Bots</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <div class="nopad vmiddle">
+                <input type="checkbox" id="autorestart-bots">Auto-restart nonresponsive bots</input>
+            </div>
+        </div>
+        <div id="footer">
+            <hr>
+            <span class="nohighlight">
+                nullifiedcat, 2017 | <a href="https://github.com/nullifiedcat" target="_blank">github</a>
+            </span>
+        </div>
+    </body>
+</html>

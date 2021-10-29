@@ -1,0 +1,19 @@
+{
+  "name": "forever",
+  "version": "1.0.0",
+  "description": "Automatically restarts steam/game on crash",
+  "main": "job.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nullifiedcat",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "request": "^2.81.0",
+    "sudo": "^1.0.3",
+    "time-stamp": "^2.0.0",
+    "underscore": "^1.8.3"
+  }
+}

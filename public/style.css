@@ -1,0 +1,72 @@
+body {
+    color: #d8dfd3;
+    font-family: "Tahoma", sans-serif;
+    font-size: 10px;
+    background: #4d5844;
+    padding: 4px;
+    font-smooth: none;
+    -webkit-font-smoothing: none;
+}
+
+.team-red {
+    color: #B8383B;
+}
+
+.team-blu {
+    color: #5885A2;
+}
+
+.error {
+    color: #9a3130;
+}
+
+.warning {
+    color: #dec300;
+}
+
+.nohighlight {
+    color: #a1aa95;
+}
+
+#clients tr:not(:first-child) .client-actions {
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+#container-login
+{
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+#footer {
+    position: static;
+    bottom: 16;
+    left: 0;
+    width: 100%;
+}
+
+#footer span {
+    padding: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+.disconnected .connected {
+    color: #a1aa95;
+}
+
+.stopped .active {
+    color: #a1aa95;
+}
